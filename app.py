@@ -6,7 +6,7 @@ import json
 import pandas as pd
 import io
 
-st.title("📄 Intelligente PDF-Rechnungsanalyse mit GPT-4")
+st.title("📄 Intelligente PDF-Rechnungsanalyse mit KI")
 
 # OpenAI API-Key Eingabe
 api_key = st.text_input("Gib deinen OpenAI API-Key ein:", type="password")
@@ -50,7 +50,7 @@ Antworte im JSON-Format.
                 client = openai.OpenAI(api_key=api_key)
 
                 response = client.chat.completions.create(
-                    model="gpt-4o",
+                    model="gpt-3.5-turbo",
                     messages=[{"role": "user", "content": prompt}],
                     temperature=0
                 )
