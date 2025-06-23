@@ -1,6 +1,0 @@
-
-streamlit
-pdfplumber
-pandas
-openpyxl
-requests
