@@ -6,9 +6,9 @@ import pandas as pd
 import io
 import requests
 
-st.title("📄 Intelligente PDF-Rechnungsanalyse mit Hugging Face API (Kostenlos)")
+st.title("📄 Intelligente PDF-Rechnungsanalyse mit KI)
 
-huggingface_api_key = st.text_input("Gib deinen Hugging Face API-Key ein (optional, für mehr Geschwindigkeit):", type="password")
+huggingface_api_key = st.text_input("Hugging Face API-Key:", type="password")
 
 uploaded_files = st.file_uploader("Lade eine oder mehrere PDF-Dateien hoch", accept_multiple_files=True)
 
